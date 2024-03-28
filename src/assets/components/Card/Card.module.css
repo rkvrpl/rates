@@ -1,0 +1,32 @@
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1px;
+	color: #FAF9FD;
+	width: 25%;
+	height: 500px;
+	margin: 20px 0;
+	border: 1px solid black;
+
+}
+.title{
+	font-size: 1.8rem;
+	max-width: 100%;
+	padding: 15px;
+}
+.price{
+	max-width: 100%;
+	padding: 10px;
+}
+.currency{}
+.priceBig{}
+.month{}
+.mb{
+	color: #A7A8AA;
+	background-color: #F8F8F8;
+}
+.text{
+	color: #A7A8AA;
+	background-color: #EFEFEF;
+}
