@@ -1,32 +1,48 @@
 .container{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	gap: 1px;
+	text-align: center;
 	color: #FAF9FD;
-	width: 25%;
-	height: 500px;
 	margin: 20px 0;
-	border: 1px solid black;
-
+}
+.selected{
+	box-shadow: 9px 8px 36px 32px #9c9696;
 }
 .title{
-	font-size: 1.8rem;
+	font-size: 2rem;
 	max-width: 100%;
 	padding: 15px;
 }
 .price{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	max-width: 100%;
-	padding: 10px;
+	height: 130px;
+	padding: 20px 10px;
 }
-.currency{}
-.priceBig{}
-.month{}
+.currency{
+	position: relative;
+	bottom: 30px;
+}
+.priceBig{
+	font-size: 4rem;
+}
+.month{
+	position: relative;
+	top: 20px;
+}
 .mb{
-	color: #A7A8AA;
+	font-size: 1.2rem;
+	color: #6f6f71ca;
 	background-color: #F8F8F8;
+	padding: 2vw;
 }
 .text{
-	color: #A7A8AA;
+	font-size: 1.2rem;
+	line-height: 25px;
+	color: #6f6f7181;
 	background-color: #EFEFEF;
+	padding: 1vw;
 }
