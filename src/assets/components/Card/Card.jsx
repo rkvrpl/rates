@@ -4,16 +4,11 @@ import style from './Card.module.css'
 const Card = (props) =>{
 	const { price, mb, theme, selected} = props
 
-	let classNameDefault = `style.container`
+	let classNameDefault = style.container
 	let classNameSelected = `${style.container} ${style.selected}`
-	console.log(selected)
 
 	return(
-		
-		<div className={{selected}? 
-		classNameSelected:
-		classNameDefault
-		}>
+		<div className={selected ? classNameSelected : classNameDefault}>
 			<p className={`${theme.dark} ${style.title}`} >Безлимитный {price}</p>
 			<div className={`${theme.light} ${style.price}`} >
 				<p className={style.currency}>руб</p>
