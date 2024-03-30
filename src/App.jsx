@@ -10,10 +10,10 @@ function App() {
   return (
     <div className='content'>
       <div className='cards'>
-        <Card selected={false} price={300} mb={10} theme={themeBlue} />
-        <Card selected={true} price={450} mb={50}theme={themeGreen} />
-        <Card selected={false} price={550} mb={100}theme={themeRed} />
-        <Card selected={false} price={1000} mb={200}theme={themeBlack} />
+        <Card selected='false' price='300' mb='10' theme={themeBlue} />
+        <Card selected='true' price='450' mb='50'theme={themeGreen} />
+        <Card selected='false' price='550' mb='100'theme={themeRed} />
+        <Card selected='false' price='1000' mb='200'theme={themeBlack} />
       </div> 
     </div>
   )

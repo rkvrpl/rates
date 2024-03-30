@@ -6,8 +6,10 @@ const Card = (props) =>{
 
 	let classNameDefault = `style.container`
 	let classNameSelected = `${style.container} ${style.selected}`
-	
+	console.log(selected)
+
 	return(
+		
 		<div className={{selected}? 
 		classNameSelected:
 		classNameDefault
