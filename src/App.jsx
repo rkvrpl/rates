@@ -10,7 +10,7 @@ function App() {
     <div className='content'>
       <div className='cards'>
         <Card price='300' mb='10' theme={themeBlue} />
-        <Card selected='true' price='450' mb='50'theme={themeGreen} />
+        <Card price='450' mb='50'theme={themeGreen} />
         <Card price='550' mb='100'theme={themeRed} />
         <Card price='1000' mb='200'theme={themeBlack} />
       </div> 

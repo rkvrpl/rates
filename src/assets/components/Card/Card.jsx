@@ -1,14 +1,21 @@
 import style from './Card.module.css'
+import { useState } from 'react'
 
 
 const Card = (props) =>{
-	const { price, mb, theme, selected} = props
+	const { price, mb, theme} = props
 
-	let classNameDefault = style.container
-	let classNameSelected = `${style.container} ${style.selected}`
+	const [selected , setSelected] = useState(true)
+
+	const handelSelectedState = () =>{
+		setSelected(!selected)
+	}
 
 	return(
-		<div className={selected ? classNameSelected : classNameDefault}>
+		<div onClick={handelSelectedState} 
+		className={selected ? 
+		style.container :
+		`${style.container} ${style.selected}`}>
 			<p className={`${theme.dark} ${style.title}`} >Безлимитный {price}</p>
 			<div className={`${theme.light} ${style.price}`} >
 				<p className={style.currency}>руб</p>
